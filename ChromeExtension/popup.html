@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrapeWave: Personalized Music Discovery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h2>ScrapeWave: Personalized Music Discovery</h2>
+        <div id="authMessage"></div> <!-- Display authentication-related messages -->
+        <div id="userEmail"></div> <!-- Display user email here -->
+        <!-- Login, Signup, and Logout Buttons -->
+        <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+            <button id="loginButton">Login</button>&nbsp;&nbsp;
+            <button id="signupButton">Signup</button>
+        </div>
+        <button id="logoutButton" style="display: none;">Logout</button><br/><br/>
+
+        <!-- Music Recommendation Input -->
+        <textarea id="prompt" placeholder="Enter your music preferences..."></textarea>
+       <div style="display: flex; justify-content: space-between;">
+        <button id="recommendButton" disabled>Get Recommendations</button>&nbsp; 
+        <button id="scrapeButton" disabled>Scrape Playlist</button>
+        <button id="viewPlaylistsButton">View Playlists</button>
+
+       </div>
+        <div id="results"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
